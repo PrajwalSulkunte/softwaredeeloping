@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VS Code Extension Hub</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Fira Code', monospace;
+    }
+  </style>
+<style>
+  @keyframes fade-in {
+    0% { opacity: 0; transform: translateY(10px); }
+    100% { opacity: 1; transform: translateY(0); }
+  }
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-in-out;
+  }
+</style>
+</head>
+<body class="bg-gradient-to-tr from-[#f0f4ff] via-[#ffffff] to-[#e6f0ff] text-gray-900 min-h-screen">
+  <header class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white p-6 shadow-xl sticky top-0 z-50">
+    <div class="container mx-auto flex justify-between items-center">
+      <h1 class="text-4xl font-extrabold tracking-wide">🧩 VS Code Extension Hub</h1>
+      <nav class="space-x-6 text-lg">
+        <a href="#extensions" class="hover:underline transition duration-300 hover:text-yellow-300">Extensions</a>
+        <a href="#resources" class="hover:underline transition duration-300 hover:text-yellow-300">Resources</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="p-6 container mx-auto animate-fade-in">
+    <section class="mb-16">
+      <img src="https://code.visualstudio.com/assets/images/code-stable.png" alt="VS Code" class="w-48 mx-auto mb-8 rounded-xl shadow-md" />
+      <p class="text-xl leading-relaxed bg-white p-6 rounded-2xl shadow-md border border-indigo-100">Here you'll find the go-to extensions that real developers use every day—handpicked to help you write cleaner code, work faster, and build smarter projects in VS Code.</p>
+    </section>
+
+    <section id="extensions" class="mb-20">
+      <h2 class="text-4xl font-bold mb-10 text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-700 to-purple-600">✨ Featured Extensions</h2>
+      <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Pylance (Python)</h3>
+          <p class="text-sm mb-4 text-gray-700">Fast and feature-rich Python language support with type checking and IntelliSense.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">ESLint (JavaScript)</h3>
+          <p class="text-sm mb-4 text-gray-700">Identify and fix linting issues automatically in your JavaScript and TypeScript code.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Prettier</h3>
+          <p class="text-sm mb-4 text-gray-700">Code formatter that enforces consistent styling across your files.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Live Server</h3>
+          <p class="text-sm mb-4 text-gray-700">Launch a local server with live reload to preview your web pages in real-time.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">GitLens</h3>
+          <p class="text-sm mb-4 text-gray-700">Supercharge the Git capabilities built into VS Code with powerful insights.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Thunder Client</h3>
+          <p class="text-sm mb-4 text-gray-700">Lightweight REST API client for testing APIs within VS Code.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+              <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Docker</h3>
+          <p class="text-sm mb-4 text-gray-700">Manage Docker containers and images directly from VS Code.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Code Spell Checker</h3>
+          <p class="text-sm mb-4 text-gray-700">Find and fix spelling errors in code comments and strings.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl shadow-xl hover:scale-105 transform transition duration-300 border-t-4 border-indigo-600">
+          <h3 class="font-bold text-xl mb-2">Bracket Pair Colorizer</h3>
+          <p class="text-sm mb-4 text-gray-700">Colorizes matching brackets for better code readability.</p>
+          <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer" target="_blank" class="text-indigo-700 font-medium hover:underline">Install</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="resources" class="bg-white p-10 rounded-2xl shadow-lg border border-indigo-100">
+      <h2 class="text-3xl font-bold mb-4 text-indigo-800">📚 Helpful Resources</h2>
+      <ul class="list-disc list-inside text-base space-y-2">
+        <li><a href="https://www.freecodecamp.org/" target="_blank" class="text-indigo-700 hover:underline">FreeCodeCamp – Learn to code for free</a></li>
+        <li><a href="https://www.codecademy.com/" target="_blank" class="text-indigo-700 hover:underline">Codecademy – Online coding lessons</a></li>
+        <li><a href="https://roadmap.sh" target="_blank" class="text-indigo-700 hover:underline">Developer Roadmaps – Learn what to study next</a></li>
+        <li><a href="https://dev.to/" target="_blank" class="text-indigo-700 hover:underline">DEV Community – Developer articles and discussions</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank" class="text-indigo-700 hover:underline">Stack Overflow – Get help and share coding knowledge</a></li>
+        <li><a href="https://code.visualstudio.com/docs" target="_blank" class="text-indigo-700 hover:underline">VS Code Official Docs</a></li>
+        <li><a href="https://marketplace.visualstudio.com/vscode" target="_blank" class="text-indigo-700 hover:underline">VS Code Extension Marketplace</a></li>
+        <li><a href="https://github.com/microsoft/vscode" target="_blank" class="text-indigo-700 hover:underline">VS Code GitHub Repository</a></li>
+      </ul>
+    </section>
+      
+      <section id="dev-tips" class="bg-indigo-50 p-10 mt-20 rounded-2xl shadow-lg border border-indigo-200">
+      <ul class="list-disc list-inside text-base space-y-3 text-gray-800">
+        <li>Use keyboard shortcuts in VS Code to speed up your workflow. Learn <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf" target="_blank" class="text-indigo-600 underline">Windows</a> / <a href="https://code.visualstudio.com/shortcuts/keyboard-shortcuts-macos.pdf" target="_blank" class="text-indigo-600 underline">Mac</a>.</li>
+        <li>Install extensions in a synced environment so they’re available across all your devices.</li>
+        <li>Customize your workspace using themes and custom snippets to match your coding style.</li>
+        <li>Use built-in terminals and version control to streamline development without leaving the editor.</li>
+        <li>Regularly explore the <a href="https://marketplace.visualstudio.com/vscode" target="_blank" class="text-indigo-600 underline">Extension Marketplace</a> to find new tools and productivity boosters.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="bg-gradient-to-r from-indigo-900 to-indigo-700 text-white p-6 text-center text-sm mt-16">
+    <p>&copy; 2025 VS Code Extension Hub | Built by <strong>Prajwal A Sulkunte</strong> 🔌</p>
+  </footer>
+  <!-- Floating Action Button -->
+  <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" title="Back to Top" class="fixed bottom-6 right-6 bg-indigo-700 hover:bg-indigo-900 text-white text-lg px-4 py-3 rounded-full shadow-lg transition-transform transform hover:scale-110">
+    ⬆️ Top
+  </button>
+</body>
+</html>
